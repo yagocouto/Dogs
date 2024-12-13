@@ -15,7 +15,6 @@ const Header = () => {
         <Link className={styles.login} to="/login">
           Login / Criar
         </Link>
-        )
       </nav>
     </header>
   );
