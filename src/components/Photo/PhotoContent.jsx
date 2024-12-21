@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PhotoContent.module.css';
-import { Link, Links } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PhotoComments from './PhotoComments';
 
 const PhotoContent = ({ data }) => {
@@ -16,7 +16,7 @@ const PhotoContent = ({ data }) => {
             <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
             <span className={styles.visualizacoes}>{photo.acessos}</span>
           </p>
-          <h1 className={styles.title}>
+          <h1 className="title">
             <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
           </h1>
           <ul className={styles.attributes}>
