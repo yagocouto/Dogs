@@ -11,6 +11,7 @@ import Photo from './components/Photo/Photo';
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
 import User from './components/User/User';
 import UserProfile from './components/User/userProfile';
+import NotFound from './Components/NotFound';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
                 </ProtectedRoute>
               }
             />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>
